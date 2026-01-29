@@ -1,0 +1,113 @@
+<div style="font-family: Arial, sans-serif; max-width:1000px; margin:auto; padding:20px;">
+
+  <!-- Header -->
+  <header style="text-align:center; padding-bottom:30px;">
+    <h1 style="color:#1E90FF;">Worker Safety Management System</h1>
+    <p style="font-size:16px; color:#555;">Interactive demo showing project overview, modules, data, and workflow</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav style="text-align:center; margin-bottom:30px;">
+    <a href="/dashboard" style="margin:0 15px; color:#1E90FF; text-decoration:none; font-weight:bold;">Dashboard</a>
+    <a href="/modules" style="margin:0 15px; color:#1E90FF; text-decoration:none; font-weight:bold;">Modules</a>
+    <a href="/workers" style="margin:0 15px; color:#1E90FF; text-decoration:none; font-weight:bold;">Workers</a>
+    <a href="/incidents" style="margin:0 15px; color:#1E90FF; text-decoration:none; font-weight:bold;">Safety Incidents</a>
+  </nav>
+
+  <hr style="border:1px solid #ddd; margin-bottom:30px;">
+
+  <!-- Project Overview Card -->
+  <section style="margin-bottom:30px;">
+    <div style="background-color:#f0f8ff; padding:20px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+      <h2 style="color:#1E90FF;">Project Overview</h2>
+      <p>This project is built using <strong>Frappe Framework v14</strong> to monitor worker safety, incidents, PPE compliance, and manage workflows with role-based permissions.</p>
+    </div>
+  </section>
+
+  <!-- Modules Section -->
+  <section style="margin-bottom:30px;">
+    <h2 style="color:#1E90FF; margin-bottom:15px;">Modules</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:15px;">
+      <div style="flex:1 1 200px; background:#e6f2ff; padding:15px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <h3>Worker Management</h3>
+        <p>Manage worker details, department, and status.</p>
+      </div>
+      <div style="flex:1 1 200px; background:#e6f2ff; padding:15px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <h3>Safety Incident</h3>
+        <p>Record workplace incidents with type and severity.</p>
+      </div>
+      <div style="flex:1 1 200px; background:#e6f2ff; padding:15px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <h3>PPE Compliance</h3>
+        <p>Track PPE compliance for all workers.</p>
+      </div>
+      <div style="flex:1 1 200px; background:#e6f2ff; padding:15px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <h3>Reports & Alerts</h3>
+        <p>Generate safety reports and alerts for incidents.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workers Table -->
+  <section style="margin-bottom:30px;">
+    <h2 style="color:#1E90FF;">Workers</h2>
+    <table style="width:100%; border-collapse: collapse; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <tr style="background-color:#1E90FF; color:white;">
+        <th style="padding:10px; border:1px solid #ddd;">Name</th>
+        <th style="padding:10px; border:1px solid #ddd;">Department</th>
+        <th style="padding:10px; border:1px solid #ddd;">Status</th>
+      </tr>
+      <tr>
+        <td style="padding:10px; border:1px solid #ddd;"><a href="/workers/John-Doe">John Doe</a></td>
+        <td style="padding:10px; border:1px solid #ddd;">Production</td>
+        <td style="padding:10px; border:1px solid #ddd;">Active</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td style="padding:10px; border:1px solid #ddd;"><a href="/workers/Jane-Smith">Jane Smith</a></td>
+        <td style="padding:10px; border:1px solid #ddd;">Maintenance</td>
+        <td style="padding:10px; border:1px solid #ddd;">Active</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Safety Incidents Table -->
+  <section style="margin-bottom:30px;">
+    <h2 style="color:#1E90FF;">Safety Incidents</h2>
+    <table style="width:100%; border-collapse: collapse; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <tr style="background-color:#1E90FF; color:white;">
+        <th style="padding:10px; border:1px solid #ddd;">Worker</th>
+        <th style="padding:10px; border:1px solid #ddd;">Incident</th>
+        <th style="padding:10px; border:1px solid #ddd;">Date</th>
+        <th style="padding:10px; border:1px solid #ddd;">Severity</th>
+      </tr>
+      <tr>
+        <td style="padding:10px; border:1px solid #ddd;"><a href="/workers/John-Doe">John Doe</a></td>
+        <td style="padding:10px; border:1px solid #ddd;">Machine Injury</td>
+        <td style="padding:10px; border:1px solid #ddd;">2026-01-15</td>
+        <td style="padding:10px; border:1px solid #ddd;">High</td>
+      </tr>
+      <tr style="background-color:#f2f2f2;">
+        <td style="padding:10px; border:1px solid #ddd;"><a href="/workers/Jane-Smith">Jane Smith</a></td>
+        <td style="padding:10px; border:1px solid #ddd;">Slip Accident</td>
+        <td style="padding:10px; border:1px solid #ddd;">2026-01-20</td>
+        <td style="padding:10px; border:1px solid #ddd;">Medium</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Workflow Section -->
+  <section style="margin-bottom:30px;">
+    <h2 style="color:#1E90FF;">Workflow</h2>
+    <div style="background:#e6f2ff; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <p><strong>Incident Workflow:</strong></p>
+      <ul>
+        <li>Worker reports incident → Safety Officer reviews → Manager approves → Corrective action applied</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align:center; color:#777; padding:20px;">
+    Demo website for 25% project review
+  </footer>
+
+</div>
