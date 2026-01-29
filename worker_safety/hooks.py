@@ -1,3 +1,6 @@
+fixtures = ["Web Page"]
+
+
 app_name = "worker_safety"
 app_title = "Worker Safety"
 app_publisher = "Jeslin Stephy"
