@@ -1,7 +1,7 @@
 [project]
 name = "worker_safety"
 authors = [
-    { name = "Jeslin Stephy", email = "jeslinstephy@gmail.com"}
+    { name = "Jeslin Stephy", email = "jeslinstephy@gmail.com" , version = "0.1.0"}
 ]
 description = "Smart Industry Management System with Integrated Worker Safety & Risk Monitoring"
 requires-python = ">=3.10"
